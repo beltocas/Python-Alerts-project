@@ -13,9 +13,9 @@ import pyodbc
 start = datetime.now()
 
 conn = pyodbc.connect('Driver={Teradata Database ODBC Driver 16.20};'
-                      'DBCNAME={10.11.240.31};'
-                      'UID={APP_PlanContrGestCanales};'
-                      'PWD={frBNeXosBa}')
+                      'DBCNAME={your_db_name};'
+                      'UID={user};'
+                      'PWD={password}')
 
 periodo = '202306'
 
