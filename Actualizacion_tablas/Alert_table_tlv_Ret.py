@@ -8,14 +8,16 @@ if __name__ == "__main__":
     #Control execution time
     start = datetime.now()
 
+    # Conection with ICCSERVE02
+    #conn = pyodbc.connect('Driver={SQL Server};''Server= {ICCSERVER02};' 'Database={ICC_REPORTES};''UID={user_icc};''PWD={u$3r_icc}')
 
     #Global variable
     period = '202309'
 
     conn = pyodbc.connect(
         'Driver={SQL Server};'
-        'Server= {CFERNANDEZSAXP\SERVIDORRETAIL};' #YOUR_SERVER
-        'Database={BDTCADQ};' #Your DB_BASE
+        'Server= {CFERNANDEZSAXP\SERVIDORRETAIL};'
+        'Database={BDTCADQ};'
         'Trusted_Connection=yes'
     )
     consulta = conn.cursor()

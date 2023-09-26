@@ -70,9 +70,9 @@ if __name__ == "__main__":
 
     #Conection with your data base
     conn = pyodbc.connect('Driver={Teradata Database ODBC Driver 16.20};'
-                        'DBCNAME={your_db_name};' #Your DB name
-                        'UID={user};'
-                        'PWD={password}')
+                        'DBCNAME={10.11.240.31};'
+                        'UID={APP_PlanContrGestCanales};'
+                        'PWD={frBNeXosBa}')
 
     period = '202309'
 
